@@ -1,11 +1,11 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
-//website title: pixgen - AI Image 
+//website title: pixgen - AI Image
 const Navbar = () => {
   return (
     <div className="border-b px-2">
-      <nav className=" flex justify-between items-center  py-3 max-w-7xl mx-auto w-full">
+      <nav className=" flex justify-between items-center py-3 max-w-11/12 mx-auto w-full">
         <div className="flex gap-2 items-center">
           <Image
             src={"/logo.png"}
@@ -20,26 +20,26 @@ const Navbar = () => {
 
         <ul className="flex items-center gap-5 text-sm">
           <li>
-            <Link href={"/"}>Home</Link>
+            <Link href={"/"} className="px-2 py-1 hover:bg-gray-200 rounded" >Home</Link>
           </li>
           <li>
-            <Link href={"/all-photos"}>All Photos</Link>
+            <Link href={"/all-photos"} className="px-2 py-1 hover:bg-gray-200 rounded" >All Photos</Link>
           </li>
           <li>
-            <Link href={"/pricing"}>Pricing</Link>
+            <Link href={"/pricing"} className="px-2 py-1 hover:bg-gray-200 rounded" >Pricing</Link>
           </li>
           <li>
-            <Link href={"/profile"}>Profile</Link>
+            <Link href={"/profile"} className="px-2 py-1 hover:bg-gray-200 rounded" >Profile</Link>
           </li>
         </ul>
 
         <div className="flex gap-4">
-          <ul className="flex items-center  text-sm">
+          <ul className="flex items-center gap-4 text-sm">
             <li>
-              <Link href={"/signup"}>SignUp</Link>
+              <Link href={"/signup"} className="px-2 py-1 hover:bg-gray-200 rounded" >Sign Up</Link>
             </li>
             <li>
-              <Link href={"/signin"}>SignIn</Link>
+              <Link href={"/signin"} className="px-2 py-1 hover:bg-gray-200 rounded" >Sign In</Link>
             </li>
           </ul>
         </div>
